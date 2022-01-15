@@ -11,7 +11,7 @@ The following cloud services are supported:
 
 ## <a name="installation"></a>Installation
 
-Download the latest `KoboRoot.tgz` from the Release page (or using [this direct link](https://github.com/fsantini/KoboCloud/releases/download/latest/KoboRoot.tgz)).
+Download the latest `KoboRoot.tgz` from the Release page (or using [this direct link](https://github.com/sobkas/KoboCloud/releases/download/latest/KoboRoot.tgz)).
 
 Copy it into the Kobo device:
 
@@ -88,6 +88,16 @@ Files added into a subfolder of the *public* folder of pCloud are also supported
 - Copy-paste the link in the kobocloudrc file
 
 Please note that, even though the script supports folders where the file list has multiple pages, having a list with many pages might not work.
+
+### rclone
+- To enable rclone support add this line to kobocloud config file:
+```
+RCLONE remote:
+```
+- Replace remote with your cloud provider configured in your rclone config file
+- Copy your rclone config file to `.add/kobocloud/kobocloudrc_rclone.conf`
+
+Please note, you don't need to set your remote folder as public.
 
 ## Usage
 
